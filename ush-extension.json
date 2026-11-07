@@ -1,0 +1,6 @@
+{
+  "name": "crux-evals",
+  "version": "0.2.0",
+  "description": "Crux-Evals (Crucible Assay): Complementary MCP & Hook Reasoning Evaluators (Deterministic, Blind BARS Judge, and Adversarial Falsifier).",
+  "contextFileName": "EVALUATOR_HARNESS.md"
+}

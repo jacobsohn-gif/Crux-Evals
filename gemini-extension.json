@@ -1,0 +1,6 @@
+{
+  "name": "crux-evals",
+  "version": "0.2.0",
+  "description": "Crux-Evals (Crucible Assay): Complementary MCP & Hook Reasoning Evaluators for Gemini CLI and Open Harnesses.",
+  "contextFileName": "EVALUATOR_HARNESS.md"
+}

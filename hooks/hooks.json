@@ -1,0 +1,40 @@
+{
+  "hooks": {
+    "BeforeTool": [
+      {
+        "matcher": "^(edit_file)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m crux_evals.cli_hook --event BeforeTool --mode complementary",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "AfterTool": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m crux_evals.cli_hook --event AfterTool --mode complementary",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -m crux_evals.cli_hook --event Stop --mode complementary",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

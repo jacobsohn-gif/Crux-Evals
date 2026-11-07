@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crux-evals"
+version = "0.2.0"
+description = "Crux-Evals (Crucible Assay): Universal Open-Protocol MCP & Hook Reasoning Evaluators for Agentic Coding Harnesses."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[project.scripts]
+crux-evals = "crux_evals.cli:main"
+crux-evals-mcp = "crux_evals.mcp_server:main"
+crux-evals-hook = "crux_evals.cli_hook:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crux_evals*"]
+
+[tool.setuptools.package-data]
+"crux_evals" = ["modules/*/*.yaml", "modules/*/*.md"]

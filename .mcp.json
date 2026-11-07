@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "crux-evals": {
+      "command": "python3",
+      "args": ["-m", "crux_evals.mcp_server", "--workspace", "."]
+    }
+  }
+}
